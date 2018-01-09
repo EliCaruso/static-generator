@@ -168,3 +168,30 @@ h6,
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+/*.carousel-indicators li {
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 0%;
+    background-color: #555;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 40px;
+    height: 4px;
+    margin: 10px;
+    background-color: black;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    border: none;
+    border-radius: 50%;
+    background-color: #555;
+    height: 30px;
+    width: 30px;
+}*/
