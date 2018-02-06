@@ -40,22 +40,18 @@
 
     <div class="row">
       <div class="col">
-         <div id="carouselExampleIndicators" class="carousel slide mx-auto col-sm-8" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide mx-auto col-sm-8" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1" ></li>
             <li data-target="#myCarousel" data-slide-to="2" ></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="#"><img class="d-block img-fluid" src="37256.jpg" alt="lorem ipsum"></a>
-            </div>
-            <div class="carousel-item">
-             <a href="#"><img class="d-block img-fluid" src="scienziati.jpg" alt="Scienziati"></a>
-            </div>
-            <div class="carousel-item">
-             <a href="#"><img class="d-block img-fluid" src="Logo_Scienza_Gioco.jpg" alt="Veri strumenti da scienziato"></a> 
-            </div>
+            <% images.forEach(function(article){ %>
+              <div class="carousel-item active">
+                <a href="#"><img class="d-block img-fluid" src="<%=images.image%>" alt=<%=images.text%></a>
+              </div>
+            <% }); %>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
