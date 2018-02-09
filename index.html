@@ -42,15 +42,19 @@
       <div class="col">
         <div id="carouselExampleIndicators" class="carousel slide mx-auto col-sm-8" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1" ></li>
-            <li data-target="#myCarousel" data-slide-to="2" ></li>
+            <% images.forEach(function(image, index){ %>
+              <li data-target="#myCarousel" data-slide-to=<%= index %>></li>
+            <% }); %>
           </ol>
           <div class="carousel-inner">
-            <% images.forEach(function(article){ %>
-              <div class="carousel-item active">
-                <a href="#"><img class="d-block img-fluid" src="<%=images.image%>" alt=<%=images.text%></a>
-              </div>
+            <% images.forEach(function(image, index){ %>
+              <% if(index === 0) { %>
+                <div class="carousel-item active">
+              <% } else { %>
+                <div class="carousel-item">
+              <% } %>
+                  <a href="#"><img class="d-block img-fluid" src=<%= image.image %> alt="<%=image.text%>"></a>
+                </div>
             <% }); %>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -62,28 +66,13 @@
             <span class="sr-only">Next</span>
           </a>
         </div> 
-        <div class="blog-post">
-          <h2 class="blog-post-title">Bella gara!</h2>
-          <p class="blog-post-meta">December 14, 2013 by <a href="#">Prof Tedeschi</a></p>
 
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. <break> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h4> Classifica finale </h4>
-          <ol>
-            <li>Tizio</li>
-            <li>Caio</li>
-            <li>Sempronio</li>
-          </ol>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-        </div>
-        <div class="blog-post">
-          <h2 class="blog-post-title">Ancora gare!</h2>
-          <p class="blog-post-meta">December 14, 2013 by <a href="#">Prof Vangelisti</a></p>
-
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam?</p>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-        </div>
+        <% articles.forEach(function(article){ %>
+          <div class="blog-post">
+            <h2 class="blog-post-title"><%= article.title %></h2>
+            <p> <%= article.text %></p>
+          </div>
+        <% }); %>
       </div>
 
       <aside class="col-sm-3 ml-sm-auto blog-sidebar">
