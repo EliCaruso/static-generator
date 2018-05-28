@@ -19,16 +19,16 @@
       <div class="blog-masthead">
         <div class="container">
           <nav class="navbar navbar-inverse navbar-fixed-top">
-            <a class="nav-link active" href="#">Frattali</a>
-            <a class="nav-link" href="#">Esempi</a>
-            <a class="nav-link" href="#">In formula</a>
-            <a class="nav-link" href="#">Paesaggi Frattali</a>
+            <a class="nav-link active" href="#1">Frattali</a>
+            <a class="nav-link" href="#2">Esempi</a>
+            <a class="nav-link" href="#3">In formula</a>
+            <a class="nav-link" href="#4">Paesaggi Frattali</a>
           </nav>
         </div>
       </div>
 
       <div class="blog-header">
-        <div class="image-container">
+        <div class="image-container id="1"">
           <img src="./img/romanesco-ftr.jpg" class="img-fluid" style="width:100%" alt="Immagine cavolo romanesco">
            <div class="centered text-block">
               <h1 class="blog-title text-on-img">I Frattali</h1>
@@ -43,7 +43,7 @@
     <main role="main" class="container">
       
 
-    <div class="row">
+    <div class="row" id="2">
       <div class="col">
         <h1 style="text-align: center;" >Cos'è un frattale? <break></h1>
       </div>
@@ -51,8 +51,8 @@
     </div><!-- /.row -->
 
     <div class="row">
-      <div class="col">
-        <img src="./img/Mandelbrot_black_itr20.png" class="img-fluid" style="height:50%" >
+      <div class="col"
+>        <img src="./img/Mandelbrot_black_itr20.png" class="img-fluid" style="height:50%" >
         <h1 style="text-align: center;" >Cos'è un frattale? <break></h1>
         <p> Qualcosa dovrò pur scrivercela qui, direi che ci vuole qualcosa di sensato ed abbastanza lungo</p>
       </div>
@@ -64,27 +64,73 @@
       <div class="col">
         <img src="./img/sierpinski.clear.gif" class="img-fluid" style="height:50%">
         <h1 style="text-align: center;" >Cos'è un frattale? <break></h1>
-        <p> Qualcosa dovrò pur scrivercela qui, direi che ci vuole qualcosa di sensato ed abbastanza lungo</p>
+        <p> Qualcosa dovrò pur scrivercela qui, direi che ci vuole qualcosa di sensato ed abbastanza lungo</p> 
       </div>
 
     </div><!-- /.row -->
 
-
-
-    <div class="row overlap-img">
+    <div class="row">
       <div class="col">
-        <img src="./img/Mandelbrot_black_itr20.png" class="img-fluid" style="height:100%%" >
-        <div class="overlap-img-txt">
-          <h1>Mandelblrot set</h1>
-          <p> Qualcosa dovrò pur scrivercela qui, direi che ci vuole qualcosa di sensato ed abbastanza lungo</p>
+        <div>
+          <h1>Mandelbrot Set </h1>
         </div>
-        
+      </div>
+    </div>
+
+    <div class="row blog-pagination">
+      <div class="col">
+        <img src="./img/Mandelbrot_black_itr20.png" class="img-fluid" style="height:100%"> 
+      </div>
+      <div class="col jumbotron" >
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div>
+          <h1>Dragon curve </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row blog-pagination">
+      <div class="col">
+        <img src="./img/dragon16.png" class="img-fluid" style="height:100%"> 
+      </div>
+      <div class="col jumbotron" >
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div>
+          <h1>Sierpinski triangle</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row blog-pagination">
+      <div class="col">
+        <img src="./img/sierpinski.clear.gif" class="img-fluid" style="height:100%"> 
+      </div>
+      <div class="col jumbotron" >
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+
+    <div class="row blog-pagination" id="4">
+      <div class="col">
+        <div>
+          <h1>Fractal landscapes</h1>
+        </div>
       </div>
     </div>
 
 
-
-    <div class="row">
+    <div class="row blog-pagination">
       <div class="col">
         <div id="carouselExampleIndicators" class="carousel slide mx-auto col-sm-8" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -101,19 +147,19 @@
               
                 <div class="carousel-item active">
               
-                  <a href="#"><img class="d-block img-fluid" src=scienziati.jpg alt="Ancora più scemo chi continua a leggere"></a>
+                  <a href="#"><img class="d-block img-fluid" src="./img/fra.jpg" alt="Ancora più scemo chi continua a leggere"></a>
                 </div>
             
               
                 <div class="carousel-item">
               
-                  <a href="#"><img class="d-block img-fluid" src=Logo_Scienza_Gioco.jpg alt="Ancora più gay chi continua a leggere"></a>
+                  <a href="#"><img class="d-block img-fluid" src="./img/fractal-landscape2.jpeg" alt="Ancora più gay chi continua a leggere"></a>
                 </div>
             
               
                 <div class="carousel-item">
               
-                  <a href="#"><img class="d-block img-fluid" src=37256.jpg alt="Ancora più gay chi continua a leggere"></a>
+                  <a href="#"><img class="d-block img-fluid" src="./img/fractal-landscape2.jpeg" alt="Ancora più gay chi continua a leggere"></a>
                 </div>
             
           </div>

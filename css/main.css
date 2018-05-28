@@ -168,10 +168,16 @@ h6,
 }
 
 /* Bottom right text */
-.bottom-right {
+.bottom-left {
     position: absolute;
     bottom: 8px;
-    right: 16px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 100px;
+    left: 16px;
 }
 
 .text-on-img {
@@ -193,17 +199,11 @@ h6,
     padding-right: 20px;
 }
 
-.overlap-img {
-    position: relative;
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Center it */
+.side-text{
+  padding-top: 50
+  background-color: #e6ea86;
 }
 
-.overlap-img-txt{
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: white; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
+.jumbotron{
+  background-color: #e6ea86;
 }
