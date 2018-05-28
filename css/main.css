@@ -10,8 +10,8 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #001f3f;
-  background-color: #DDDDDD; 
+  color: #243a05;
+  background-color: #d9de45; 
 }
 
 h1,
@@ -27,8 +27,8 @@ h5,
 h6,
 .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #06062f;
+  font-weight: 700;
+  color: #243a05;
 }
 
 
@@ -47,7 +47,7 @@ h6,
 
 .blog-masthead {
   margin-bottom: 3rem;
-  background-color: #001f3f;
+  background-color: #444b05;
 }
 
 /* Nav links */
@@ -55,31 +55,16 @@ h6,
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  color: #DDDDDD;
+  color: #d9de45;
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #DDDDDD;
+  color: #d9de45;
   background-color: transparent;
 }
 
 /* Active state gets a caret at the bottom */
-.nav-link.active {
-  color: #DDDDDD;
-}
-.nav-link.active::after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -.3rem;
-  vertical-align: middle;
-  content: "";
-  border-right: .3rem solid transparent;
-  border-bottom: .3rem solid;
-  border-left: .3rem solid transparent;
-}
+
 
 
 /*
@@ -89,7 +74,7 @@ h6,
 .blog-header {
   padding-bottom: 1.25rem;
   margin-bottom: 2rem;
-  border-bottom: .05rem solid #eee;
+  border-bottom: .05rem solid #444b05;
 }
 .blog-title {
   margin-bottom: 0;
@@ -98,7 +83,7 @@ h6,
 }
 .blog-description {
   font-size: 1.1rem;
-  color: #999;
+  color: #444b05;
 }
 
 @media (min-width: 40em) {
@@ -118,7 +103,7 @@ h6,
 }
 .sidebar-module-inset {
   padding: 1rem;
-  background-color: #f5f5f5;
+  background-color: #d9de45;
   border-radius: .25rem;
 }
 .sidebar-module-inset p:last-child,
@@ -150,7 +135,7 @@ h6,
 }
 .blog-post-meta {
   margin-bottom: 1.25rem;
-  color: #999;
+  color: #444b05;
 }
 
 
@@ -160,11 +145,65 @@ h6,
 
 .blog-footer {
   padding: 2.5rem 0;
-  color: #DDDDDD;
+  color: #d9de45;
   text-align: center;
-  background-color: #001f3f;
-  border-top: .05rem solid #e5e5e5;
+  background-color: #444b05;
+  border-top: .05rem solid #444b05;
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.text-on-img {
+    color: white;
+    font-family: Bookman Old Style;
+    font-weight: 700;
+}
+
+ .row {
+  display: flex;
+}
+
+.text-block {
+    top: 50%;
+    left: 50%;
+    background-color: #d9de45;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.overlap-img {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+}
+
+.overlap-img-txt{
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: white; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
 }
