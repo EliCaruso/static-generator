@@ -183,6 +183,7 @@ h6,
 .text-on-img {
     color: white;
     font-family: Bookman Old Style;
+    text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
     font-weight: 700;
 }
 
@@ -206,4 +207,10 @@ h6,
 
 .jumbotron{
   background-color: #e6ea86;
+}
+
+.my-img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
