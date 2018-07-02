@@ -31,6 +31,10 @@ h6,
   color: #243a05;
 }
 
+a, .a{
+  color: #243a05;
+}
+
 
 /*
  * Override Bootstrap's default container.
@@ -214,3 +218,4 @@ h6,
   width: 100%;
   height: auto;
 }
+
